@@ -9,4 +9,6 @@ compress([H1,H2|T])->
 compress([T])->
 	[T];
 compress([])->
-	[].
+	[];
+compress(_)->
+	undefined.

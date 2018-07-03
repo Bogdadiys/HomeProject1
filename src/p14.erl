@@ -5,4 +5,6 @@
 dublicate([H|T])->
 	[H,H|dublicate(T)];
 dublicate([])->
-	[].
+	[];
+dublicate(_)->
+	undefined.

@@ -9,4 +9,6 @@
 len([_H|T])->
 	1+len(T);
 len([])->
-	0.
+	0;
+len(_)->
+	undefined.

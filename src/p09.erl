@@ -11,7 +11,9 @@ pack([H1,H2|T],Count)->
 pack([T],Count)->
 	[print(T,Count)];
 pack([],_)->
-	[].
+	[];
+pack(_,_)->
+	undefined.
 
 print(_H,0)->
 	[];

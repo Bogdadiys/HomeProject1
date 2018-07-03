@@ -9,5 +9,7 @@ replicate([_H|T],0,N1)->
 replicate([H|T],N,N1)->
 	[H|replicate([H|T],N-1,N1)];
 replicate([],_N,_N1)->
-	[].
+	[];
+replicate(_,_,_)->
+	undefined.
 

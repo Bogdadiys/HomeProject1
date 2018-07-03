@@ -9,6 +9,8 @@ flatten([[H|T1]|T2])->
 flatten([H|T])->
 	[H|flatten(T)];
 flatten([])->
-	[].
+	[];
+flatten(_)->
+	undefined.
 
 

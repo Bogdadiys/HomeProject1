@@ -11,5 +11,7 @@ encode([H1,H2|T],Count)->
 encode([T],Count)->
 	[{Count,T}];
 encode([],_)->
-	[].
+	[];
+encode(_,_)->
+	undefined.
 

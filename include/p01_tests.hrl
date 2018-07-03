@@ -1,4 +1,5 @@
--module(p01_tests).
+%-module(p01_tests).
+-ifdef(TEST).
 -include_lib("eunit/include/eunit.hrl").
 -author("Bogdan Kalyta").
 last_test()->[

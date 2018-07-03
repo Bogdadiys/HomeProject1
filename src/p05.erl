@@ -8,5 +8,7 @@ reverse(L)->
 get_rev([],RevL)->
 	RevL;
 get_rev([H|T],RevL)->
-	get_rev(T,[H|RevL]).
+	get_rev(T,[H|RevL]);
+get_rev(_,_)->
+	undefined.
 

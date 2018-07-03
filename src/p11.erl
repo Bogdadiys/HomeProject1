@@ -15,5 +15,7 @@ encode_modified([T],1)->
 encode_modified([T],Count)->
 	[{Count,T}];
 encode_modified([],_)->
-	[].
+	[];
+encode_modified(_,_)->
+	undefined.
 

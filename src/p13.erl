@@ -7,5 +7,7 @@ decode([{1,H}|T])->
 decode([{Count,H}|T])->
 	[H|decode([{Count-1,H}|T])];
 decode([])->
-	[].
+	[];
+decode(_)->
+	undefined.
 

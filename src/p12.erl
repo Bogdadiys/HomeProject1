@@ -9,4 +9,6 @@ decode_modified([{Count,H}|T])->
 decode_modified([H|T])->
 	[H|decode_modified(T)];
 decode_modified([])->
-	[].
+	[];
+decode_modified(_)->
+	undefined.
